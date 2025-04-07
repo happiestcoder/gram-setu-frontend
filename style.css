@@ -1,0 +1,125 @@
+:root {
+    --primary: rgb(108, 108, 108);
+    --accent: green;
+    --text: white;
+    --background: #fffef9;
+    --card-bg: #ffffff;
+    --shadow: rgba(138, 138, 138, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .gramsetu{
+    font-size: 100px;
+    color: #ffffff;
+  }
+  nav {
+    background-image: url('cool-greyscale-background-black-stone-fragments-with-tree-branches.jpg');
+    background-size: cover;      /* Makes the image cover the entire nav */  /* Keeps it centered */
+    height: 100;
+    background-color: var(--accent);
+    padding: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    color: var(--text);
+    font-size: 1.8rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .section {
+    padding: 3rem 2rem;
+     background-color: rgb(51, 51, 51);
+
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  form input,
+  form select,
+  form textarea,
+  form button,
+  .filters input {
+    display: block;
+    width: 100%;
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .dashboard,
+  .filters {
+    margin-top: 2rem;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .card {
+
+    background-color: black;
+    border-color: white;
+    stroke-width: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    text-decoration: #000000;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px 5px rgb(188, 185, 185);
+  }
+  
+  button {
+    background-color: black;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 15px 5px rgb(188, 185, 185);
+  }
+  

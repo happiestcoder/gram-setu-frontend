@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gram Setu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <h1 class="gramsetu">Gram Setu</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#complaints">Complaints</a></li>
+      <li><a href="#info">Information</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button> Login </button></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section">
+    <h2>Welcome to Gram Setu</h2>
+    <p>Connecting rural communities with solutions</p>
+  </section>
+
+  <section id="complaints" class="section">
+    <h2>Submit a Complaint</h2>
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="Your Name (Optional)" />
+      <input type="email" id="email" placeholder="Your Email (Optional)" />
+      <select id="category">
+        <option value="roads">Roads</option>
+        <option value="electricity">Electricity</option>
+        <option value="water">Water</option>
+      </select>
+      <textarea id="complaintText" placeholder="Describe your complaint..."></textarea>
+      <button type="submit">Submit Complaint</button>
+    </form>
+
+    <div class="dashboard">
+      <h3>Complaints Dashboard</h3>
+      <select id="statusFilter">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="resolved">Resolved</option>
+      </select>
+      <div id="complaintCards" class="card-container"></div>
+    </div>
+  </section>
+
+  <section id="info" class="section">
+    <h2>Information Section</h2>
+    <div class="filters">
+      <input type="text" id="searchSchemes" placeholder="Search Schemes..." />
+    </div>
+    <div id="infoCards" class="card-container"></div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: support@gramsetu.org</p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
